@@ -24,6 +24,10 @@ nav {
     color: #ffffff;
     font-size: 15px;
     font-weight: 300;
+    &:hover {
+      text-decoration: none;
+      color: $main-color;
+    }
   }
   &_item {
     border-right: 2px dotted black;
@@ -68,6 +72,10 @@ nav {
     text-transform: uppercase;
     text-align: right;
     line-height: 12px;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
   }
   &_btn {
     margin-top: 19px;
@@ -304,16 +312,16 @@ $main-color: #1eacc7;
     font-size: 17px;
     font-weight: 300;
     line-height: 24px;
-    &.black {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 499px;
-      width: 100%;
-      background-color: #070716;
-      z-index: 1;
-    }
   }
+}
+.black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
 }
 .require {
   padding: 68px 0 84px 0;
@@ -497,8 +505,7 @@ $main-color: #1eacc7;
       text-align: center;
     }
   }
-
-  .xs-visible {
-    display: none;
-  }
+}
+.xs-visible {
+  display: none;
 }
